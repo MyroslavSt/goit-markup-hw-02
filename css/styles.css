@@ -1,7 +1,22 @@
 body {
-    font-family: 'Raleway', sans-serif;
     font-family: 'Roboto', sans-serif;
+    background-color: #FFFFFF;
+}
 
+:root {
+    --brand-color: #2E2F42;
+}
+
+:root {
+    --brand-titel: #2E2F42;
+}
+
+:root {
+    --brand-text: #434455;
+}
+
+:root {
+    --brand-btn: #404BBF;
 }
 
 .link {
@@ -14,11 +29,6 @@ body {
 
 /* header */
 
-.header_background {
-
-    background:
-        #FFFFFF;
-}
 
 .logo {
     font-family: 'Raleway',
@@ -26,6 +36,15 @@ body {
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
+    color: #2E2F42;
+}
+
+.logo-color {
+    color: #4D5AE5;
+}
+
+.logo-footer {
+    color: #F4F4FD;
 }
 
 .header-link {
@@ -35,19 +54,21 @@ body {
     color: #2E2F42;
 }
 
-.header-link:hover {
-    color: aqua;
-}
-
+.header-link:hover,
 .header-link:focus {
-    color: aqua;
+    color: #404BBF;
 }
 
 .header-contact {
-    font-weight: 400;
     font-size: 16px;
+    font-style: normal;
     line-height: 1.5;
     color: #434455;
+}
+
+.header-contact:hover,
+.header-contact:focus {
+    color: #404BBF;
 }
 
 /* main */
@@ -55,7 +76,7 @@ body {
 /* sec 1 */
 
 .back-color {
-    background-color: #2E2F42;
+    background-color: var(--brand-color);
 }
 
 .sec-one {
@@ -78,6 +99,12 @@ body {
     cursor: pointer;
 }
 
+.main-btn:hover,
+.main-btn:focus {
+    background: #404BBF;
+}
+
+
 /* sec 2 */
 
 .sec-two {
@@ -85,15 +112,14 @@ body {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--brand-titel);
 }
 
 .sec-two-text {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--brand-text);
 }
 
 /* sec 3 */
@@ -103,7 +129,7 @@ body {
     font-size: 36px;
     line-height: 1.1;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--brand-titel);
 }
 
 /* sec 4 */
@@ -113,7 +139,7 @@ body {
     font-size: 36px;
     line-height: 1.1;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--brand-titel);
 }
 
 .sec-four-name {
@@ -121,25 +147,23 @@ body {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--brand-titel);
 }
 
 .sec-four-text {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--brand-text);
 }
 
 /* footer */
 
 .back-color {
-    background-color: #2E2F42;
+    background-color: var(--brand-color);
 }
 
 .footer-text {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -157,35 +181,27 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    color: #4D5AE5;
+    color: #404BBF;
     background: #F4F4FD;
     border: 1px solid #E7E9FC;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
+    cursor: pointer;
 }
 
-.btn:hover {
+
+.btn:hover,
+.btn:focus {
     color: #FFFFFF;
-    background: #404BBF;
+    background: var(--brand-btn);
 }
 
-.btn:focus {}
-
-.color_one {
+.color-one {
     background: #E5E5E5;
 }
-
-/* portfolio sec 2 */
 
 .color_two {
     background: #E5E5E5;
-}
-
-.portfolio-titel {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.1;
-    letter-spacing: 0.02em;
-    color: #2E2F42;
 }
 
 .portfolio-name {
@@ -193,13 +209,12 @@ body {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--brand-titel);
 }
 
 .portfolio-text {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--brand-text);
 }
