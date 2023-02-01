@@ -1,22 +1,17 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #FFFFFF;
+    background-color: var(--brand-background-color);
+    color: var(--brand-color)#2E2F42;
 }
 
 :root {
-    --brand-color: #2E2F42;
-}
-
-:root {
-    --brand-titel: #2E2F42;
-}
-
-:root {
+    --brand-background-color: #FFFFFF;
+    --brand-back-color: #2E2F42;
     --brand-text: #434455;
-}
-
-:root {
     --brand-btn: #404BBF;
+    --brand-logo: #2E2F42;
+    --brand-logo-color: #4D5AE5;
+    --brand-logo-footer: #F4F4FD;
 }
 
 .link {
@@ -36,15 +31,20 @@ body {
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
-    color: #2E2F42;
+    color: var(--brand-logo);
 }
 
 .logo-color {
-    color: #4D5AE5;
+    color: var(--brand-logo-color)
 }
 
 .logo-footer {
-    color: #F4F4FD;
+    font-family: 'Raleway',
+        sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    color: var(--brand-logo-footer)
 }
 
 .header-link {
@@ -76,7 +76,7 @@ body {
 /* sec 1 */
 
 .back-color {
-    background-color: var(--brand-color);
+    background-color: var(--brand-back-color);
 }
 
 .sec-one {
@@ -112,7 +112,7 @@ body {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: var(--brand-titel);
+    color: var(--brand-color);
 }
 
 .sec-two-text {
@@ -129,7 +129,7 @@ body {
     font-size: 36px;
     line-height: 1.1;
     letter-spacing: 0.02em;
-    color: var(--brand-titel);
+    color: var(--brand-color);
 }
 
 /* sec 4 */
@@ -139,7 +139,7 @@ body {
     font-size: 36px;
     line-height: 1.1;
     letter-spacing: 0.02em;
-    color: var(--brand-titel);
+    color: var(--brand-color);
 }
 
 .sec-four-name {
@@ -147,7 +147,7 @@ body {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: var(--brand-titel);
+    color: var(--brand-color);
 }
 
 .sec-four-text {
@@ -196,20 +196,12 @@ body {
     background: var(--brand-btn);
 }
 
-.color-one {
-    background: #E5E5E5;
-}
-
-.color_two {
-    background: #E5E5E5;
-}
-
 .portfolio-name {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: var(--brand-titel);
+    color: var(--brand-color);
 }
 
 .portfolio-text {
